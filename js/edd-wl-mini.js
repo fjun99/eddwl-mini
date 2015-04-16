@@ -106,6 +106,7 @@ jQuery(document).ready(function ($) {
         var variable_price = $this.data('variable-price');
         var price_mode     = $this.data('price-mode');
         var item_price_ids = [];
+        var list_id = $this.data('list-id');
 
         console.log( '111');
 
@@ -137,7 +138,7 @@ jQuery(document).ready(function ($) {
             list_id = jQuery('#user-lists').val();
         }
 
-        list_id=397;
+        //list_id=397;
 
         var action          = $this.data('action'),
             list_id         = list_id,
@@ -156,6 +157,7 @@ jQuery(document).ready(function ($) {
             };
 
         console.log( '333');
+        //console.log(action);
         console.log(data);
 
         $.ajax({

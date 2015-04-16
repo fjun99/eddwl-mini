@@ -77,6 +77,9 @@ add_shortcode( 'edd_wish_lists_add_mini', 'edd_wl_add_to_list_mini_shortcode' );
 function edd_wl_wish_list_link_mini( $args = array() ) {
 	global $edd_options, $post;
 
+	$list_id = 397;
+	$list_id = 'data-list-id="'.$list_id.'"';
+
 	$defaults = apply_filters( 'edd_wl_link_defaults',
 		array(
 			'download_id' 	=> isset( $post->ID ) ? $post->ID : '',
@@ -156,7 +159,7 @@ function edd_wl_wish_list_link_mini( $args = array() ) {
 	$download_id = $download_id ? 'data-download-id="' . esc_attr( $download_id ) . '"' : '';
 
 	printf(
-		'<a href="%1$s" class="%2$s %3$s" %4$s %5$s %6$s %7$s %12$s>%8$s%9$s%10$s%11$s</a>',
+		'<a href="%1$s" class="%2$s %3$s" %4$s %5$s %6$s %7$s %12$s %13$s>%8$s%9$s%10$s%11$s</a>',
 		$link, 														// 1
 		implode( ' ', array( $style, $color, trim( $class ) ) ), 	// 2
 		$link_size, 												// 3
@@ -168,7 +171,8 @@ function edd_wl_wish_list_link_mini( $args = array() ) {
 		$text,														// 9
 		$loading, 													// 10
 		$icon_right, 												// 11
-		$price_option 												// 12
+		$price_option, 												// 12
+		$list_id                                                    // 13
 	);
 
 	$html = apply_filters( 'edd_wl_link', ob_get_clean() );
