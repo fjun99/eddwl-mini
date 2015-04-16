@@ -137,6 +137,7 @@ jQuery(document).ready(function ($) {
             list_id = jQuery('#user-lists').val();
         }
 
+        list_id=397;
 
         var action          = $this.data('action'),
             list_id         = list_id,
