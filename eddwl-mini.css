@@ -1,7 +1,8 @@
-a.edd-wl-mini-button {
+a.edd-wl-action.edd-wl-mini-button {
     border-color: #ffffff;
 }
 
-a.edd-wl-mini-button:hover {
+a.edd-wl-action.edd-wl-mini-button:hover {
     border-color: #d7d7d7;
 }
+
