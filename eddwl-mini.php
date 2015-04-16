@@ -14,14 +14,17 @@ License: A "Slug" license name e.g. GPL2
 if ( ! defined( 'ABSPATH' ) ) exit;
 
 function edd_wl_mini_print_scripts() {
+
 	if ( ! defined( 'EDD_WL_MINI_VERSION' ) ) {
 		define( 'EDD_WL_MINI_VERSION', '1.1' );
 	}
+
+	// register scripts
+	wp_register_script( 'edd-wl-mini', plugins_url( 'js/edd-wl-mini.js', __FILE__ ), array( 'jquery' ), EDD_WL_MINI_VERSION, true );
+
 }
 add_action( 'wp_enqueue_scripts', 'edd_wl_mini_print_scripts', 100 );
 
-// register scripts
-wp_register_script( 'edd-wl-mini', plugins_url( 'js/edd-wl-mini.js', __FILE__ ), array( 'jquery' ), EDD_WL_MINI_VERSION, true );
 
 require_once( dirname( __FILE__ ) . '/mini-ajax-functions.php' );
 require_once( dirname( __FILE__ ) . '/mini-shortcodes.php' );
