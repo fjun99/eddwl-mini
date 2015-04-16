@@ -23,7 +23,7 @@ function edd_wl_mini_print_scripts() {
 	wp_register_script( 'edd-wl-mini', plugins_url( '/js/edd-wl-mini.js', __FILE__ ), array( 'jquery' ), EDD_WL_MINI_VERSION, true );
 
 
-	wp_enqueue_script( 'ajax-script', plugins_url( '/js/my_query.js', __FILE__ ), array('jquery') );
+	wp_enqueue_script( 'ajax-script', plugins_url( '/js/my_query.js', __FILE__ ), array('jquery'),EDD_WL_MINI_VERSION, true  );
 
 	// in JavaScript, object properties are accessed as ajax_object.ajax_url, ajax_object.we_value
 	wp_localize_script( 'ajax-script', 'ajax_object',
