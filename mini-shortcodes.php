@@ -129,6 +129,9 @@ function edd_wl_wish_list_link_mini( $args = array() ) {
 	$icon_left = 'left' == $icon_position ? $icon : '';
 	$icon_right = 'right' == $icon_position ? $icon : '';
 
+	//BYFJ
+	$class .= "edd-wish-lists-add-mini";
+
 	$class .= 'right' == $icon_position ? ' glyph-right' : ' glyph-left';
 	$class .= ! $text ? ' no-text' : '';
 
