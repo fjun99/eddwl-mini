@@ -166,7 +166,7 @@ jQuery(document).ready(function ($) {
             dataType: "json",
             url: edd_wl_scripts.ajaxurl,
             success: function (response) {
-
+/*
                 // hide the save button and show the close buttons
                 $('.edd-wl-save').hide();
                 $('.edd-wl-success').show();
@@ -196,6 +196,7 @@ jQuery(document).ready(function ($) {
                 }
 
                 console.log( 'success');
+*/
             }
         }).fail(function (response) {
             console.log(response);
