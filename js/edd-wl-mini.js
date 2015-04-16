@@ -156,6 +156,7 @@ jQuery(document).ready(function ($) {
             };
 
         console.log( '333');
+        console.log(data);
 
         $.ajax({
             type: "POST",
