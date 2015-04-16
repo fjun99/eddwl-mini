@@ -17,7 +17,7 @@
  */
 function edd_wl_add_to_list_mini_shortcode( $atts, $content = null ) {
 	global $post, $edd_options;
-/*
+
 	extract( shortcode_atts( array(
 			'id' 		=> $post->ID,
 			'text' 		=> ! empty( $edd_options[ 'edd_wl_add_to_wish_list' ] ) ? $edd_options[ 'edd_wl_add_to_wish_list' ] : __( 'Add to wish list', 'edd-wish-lists' ),
@@ -38,8 +38,10 @@ function edd_wl_add_to_list_mini_shortcode( $atts, $content = null ) {
 		'shortcode'		=> true // used to return the links, not echo them in edd_wl_wish_list_link()
 	), $id, $option );
 
-	$content = edd_wl_wish_list_link( $args );
-*/
+	var_dump($args);
+
+//	$content = edd_wl_wish_list_link( $args );
+
 	// load required scripts for this shortcode
 	wp_enqueue_script( 'edd-wl-mini' );
 
