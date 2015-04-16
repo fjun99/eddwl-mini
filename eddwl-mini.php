@@ -32,5 +32,5 @@ function edd_wl_mini_print_scripts() {
 add_action( 'wp_enqueue_scripts', 'edd_wl_mini_print_scripts', 100 );
 
 
-require_once( dirname( __FILE__ ) . '/mini-ajax-functions.php' );
-require_once( dirname( __FILE__ ) . '/mini-shortcodes.php' );
+require_once( plugins_url( '/mini-ajax-functions.php' ));
+require_once( plugins_url( '/mini-shortcodes.php') );
