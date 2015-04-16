@@ -37,6 +37,8 @@ function edd_wl_mini_print_scripts() {
 	);
 
 
+	wp_enqueue_style( 'edd-wl-styles', plugins_url( '/eddwl-mini.css', __FILE__ ), array(), EDD_WL_MINI_VERSION, 'screen' );
+
 }
 add_action( 'wp_enqueue_scripts', 'edd_wl_mini_print_scripts', 100 );
 
