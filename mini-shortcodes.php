@@ -148,6 +148,7 @@ function edd_wl_wish_list_link_mini( $args = array() ) {
 
 	// if link is specified, don't show spinner
 	$loading = ! $link ? '<span class="edd-loading"><i class="edd-icon-spinner edd-icon-spin"></i></span>' : '';
+	$loading = '';
 	$link = ! $link ? '#' : $link;
 
 	// text
