@@ -75,12 +75,12 @@ jQuery(document).ready(function ($) {
     // Processes the add to wish list request. Creates a new list or stores downloads into existing list
 
     $('body').on('click.eddAddToWishList', '.edd-wish-lists-add-mini', function (e) {
-            console.log( 'save link clicked');
+            //console.log( 'save link clicked');
 
         e.preventDefault();
 
-        alert('edd-wish-lists-add-mini');
-        return false;
+        //alert('edd-wish-lists-add-mini');
+        //return false;
 
         var $spinner        = $(this).find('.edd-loading');
 
