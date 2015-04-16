@@ -20,5 +20,5 @@ if ( ! defined( 'EDD_WL_MINI_VERSION' ) )
 // register scripts
 wp_register_script( 'edd-wl-mini', plugins_url( 'js/edd-wl-mini.js', __FILE__ ), array( 'jquery' ), EDD_WL_MINI_VERSION, true );
 
-require_once( dirname( __FILE__ ) . 'mini-ajax-functions.php' );
-require_once( dirname( __FILE__ ) . 'mini-shortcodes.php' );
+require_once( dirname( __FILE__ ) . '/mini-ajax-functions.php' );
+require_once( dirname( __FILE__ ) . '/mini-shortcodes.php' );
