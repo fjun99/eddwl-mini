@@ -3,7 +3,7 @@
 /*
 Plugin Name: EDD WL mini
 Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
-Description: A brief description of the Plugin.
+Description: extension of EDD Wish Lists.
 Version: 1.0
 Author: fangjun
 Author URI: http://URI_Of_The_Plugin_Author
@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 function edd_wl_mini_print_scripts() {
 
 	if ( ! defined( 'EDD_WL_MINI_VERSION' ) ) {
-		define( 'EDD_WL_MINI_VERSION', '1.1' );
+		define( 'EDD_WL_MINI_VERSION', '1.0' );
 	}
 
 	// register scripts
