@@ -81,7 +81,7 @@ jQuery(document).ready(function ($) {
 
         //alert('edd-wish-lists-add-mini');
         //return false;
-
+/*
         var $spinner        = $(this).find('.edd-loading');
 
         var spinnerWidth    = $spinner.width(),
@@ -95,7 +95,7 @@ jQuery(document).ready(function ($) {
             'margin-left': spinnerWidth / -2,
             'margin-top' : spinnerHeight / -2
         });
-
+*/
         var $this = $(this),
             form = $this.closest('form'); // get the closest form element
 
@@ -106,6 +106,8 @@ jQuery(document).ready(function ($) {
         var variable_price = $this.data('variable-price');
         var price_mode     = $this.data('price-mode');
         var item_price_ids = [];
+
+        console.log( '111');
 
         // single_price_option mode (from shortcode)
         var single_price_option = $('input[name=edd-wl-single-price-option]').val();
@@ -129,6 +131,7 @@ jQuery(document).ready(function ($) {
             item_price_ids[0] = download;
         }
 
+        console.log( '222');
 
         if ( 'existing-list' == jQuery( 'input:radio[name=list-options]:checked' ).val() ) {
             list_id = jQuery('#user-lists').val();
@@ -150,6 +153,8 @@ jQuery(document).ready(function ($) {
                 list_status : list_status,
                 nonce: edd_wl_scripts.ajax_nonce      // nonce
             };
+
+        console.log( '333');
 
         $.ajax({
             type: "POST",
@@ -185,6 +190,8 @@ jQuery(document).ready(function ($) {
                     }
 
                 }
+
+                console.log( 'success');
             }
         }).fail(function (response) {
             console.log(response);
