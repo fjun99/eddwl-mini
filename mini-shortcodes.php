@@ -34,7 +34,7 @@ function edd_wl_add_to_list_mini_shortcode( $atts, $content = null ) {
 		'text' 			=> $text,
 		'icon'			=> $icon,
 		'style'			=> $style,
-		'action'		=> 'edd_wl_open_modal',
+		'action'		=> 'edd_ajax_add_to_wish_list_mini',
 		'class'			=> 'edd-wl-open-modal edd-wl-action edd-wish-lists-add-mini before',
 		'price_option'	=> $option,
 		'shortcode'		=> true // used to return the links, not echo them in edd_wl_wish_list_link()
@@ -56,7 +56,7 @@ array(8) { ["download_id"]=> string(3) "170"
 	// load required scripts for this shortcode
 	wp_enqueue_script( 'edd-wl-mini' );
 
-	wp_enqueue_script('ajax-script');
+//	wp_enqueue_script('ajax-script');
 
 
 //	$content = "<p class='btn'>EDD WL MINI</p>";
