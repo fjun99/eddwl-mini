@@ -29,13 +29,14 @@ function edd_wl_add_to_list_mini_shortcode( $atts, $content = null ) {
 		), $atts, 'edd_wish_lists_add' )
 	);
 
-	$args = apply_filters( 'edd_wl_add_to_list_shortcode', array(
+
+	$args = apply_filters( 'edd_wl_add_to_list_mini_shortcode', array(
 		'download_id' 	=> $id,
 		'text' 			=> $text,
 		'icon'			=> $icon,
 		'style'			=> $style,
 		'action'		=> 'edd_add_to_wish_list_mini',
-		'class'			=> 'edd-wl-mini-button edd-wl-action edd-wish-lists-add-mini before',
+		'class'			=> 'edd-wl-open-modal edd-wl-mini-button edd-wl-action edd-wish-lists-add-mini before',
 		'price_option'	=> $option,
 		'shortcode'		=> true // used to return the links, not echo them in edd_wl_wish_list_link()
 	), $id, $option );
